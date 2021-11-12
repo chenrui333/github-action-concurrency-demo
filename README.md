@@ -11,7 +11,6 @@ demo concurrency usage
 - `cancel-in-progress: true` vs `cancel-in-progress: ${{github.event_name == 'pull_request'}}` etc
 
 ## test PR progress
-### commit 2
 
 ## references
 blog, https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#concurrency
