@@ -4,7 +4,7 @@ demo concurrency usage
 
 ## Demo items
 
-1. flow with main branch
+1. flow with runs on main branch
 2. flow with the PR process
 3. flow wiht the PR branch updates
 4. flow with the workflow_dispatch events
