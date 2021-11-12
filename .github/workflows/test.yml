@@ -26,4 +26,4 @@ jobs:
           echo "GITHUB_REF" ${{ github.ref }}
           sleep 20
       - name: step2
-        run: sleep 40
+        run: sleep 300
