@@ -1,0 +1,28 @@
+name: test
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+
+# This allows one Build workflow run to interrupt another
+# https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#concurrency
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{github.event_name == 'pull_request'}}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: step1
+        run: |
+          echo "GITHUB_SHA" ${{ github.sha }}
+          echo "GITHUB_REF" ${{ github.ref }}
+          sleep 20
+      - name: step2
+        run: sleep 40
