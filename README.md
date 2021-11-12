@@ -4,11 +4,11 @@ demo concurrency usage
 
 ## Demo items
 
-1. flow with runs on main branch
-2. flow with the PR process
-3. flow wiht the PR branch updates
-4. flow with the workflow_dispatch events
-5. `cancel-in-progress: true` vs `cancel-in-progress: ${{github.event_name == 'pull_request'}}` etc
+- flow with main branch
+- flow with the PR process
+- flow wiht the PR branch updates
+- flow with the workflow_dispatch events
+- `cancel-in-progress: true` vs `cancel-in-progress: ${{github.event_name == 'pull_request'}}` etc
 
 ## test PR progress
 ### commit 2
